@@ -109,7 +109,7 @@ if __name__ == "__main__":
 
         for current_layer in range(len(current_led_layers)):
             layer_matrix[current_layer][current_led_id] = current_led_layers[current_layer]
+        
+    display = "\n".join(["".join(row) for row in layer_matrix])
 
-    for row in range(len(layer_matrix)):
-        layer_matrix[row] = "".join(layer_matrix[row])
-        print(layer_matrix[row])
+    print(display)
